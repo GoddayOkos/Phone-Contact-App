@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contactListFragment">
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="dev.decagon.godday.contacts.ui.ContactListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_contact_list">
+        <action
+            android:id="@+id/action_contactListFragment_to_createContactFragment"
+            app:destination="@id/createContactFragment" />
+        <action
+            android:id="@+id/action_contactListFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment" />
+        <action
+            android:id="@+id/action_contactListFragment_to_phoneContactFragment"
+            app:destination="@id/phoneContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createContactFragment"
+        android:name="dev.decagon.godday.contacts.ui.CreateContactFragment"
+        android:label="@string/create_contact"
+        tools:layout="@layout/fragment_create_contact">
+        <action
+            android:id="@+id/action_createContactFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment"
+            app:popUpTo="@id/contactListFragment" />
+        <action
+            android:id="@+id/action_createContactFragment_to_contactListFragment"
+            app:destination="@id/contactListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailsFragment"
+        android:name="dev.decagon.godday.contacts.ui.ContactDetailsFragment"
+        android:label="@string/contact_details"
+        tools:layout="@layout/fragment_contact_details" >
+        <action
+            android:id="@+id/action_contactDetailsFragment_to_editContactFragment"
+            app:destination="@id/editContactFragment"
+            app:popUpTo="@id/contactDetailsFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="contact"
+            app:argType="dev.decagon.godday.contacts.model.Contact" />
+        <action
+            android:id="@+id/action_contactDetailsFragment_to_contactListFragment"
+            app:destination="@id/contactListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="dev.decagon.godday.contacts.ui.EditContactFragment"
+        android:label="@string/edit_contact"
+        tools:layout="@layout/fragment_edit_contact">
+        <action
+            android:id="@+id/action_editContactFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment"
+            app:popUpTo="@id/contactListFragment" />
+        <argument
+            android:name="contact"
+            app:argType="dev.decagon.godday.contacts.model.Contact" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneContactFragment"
+        android:name="dev.decagon.godday.contacts.ui.PhoneContactFragment"
+        android:label="@string/phone_contact_label"
+        tools:layout="@layout/fragment_phone_contact" />
+</navigation>

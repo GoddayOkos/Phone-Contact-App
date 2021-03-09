@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "479648512488",
+    "firebase_url": "https://week-6-task-d2672-default-rtdb.firebaseio.com",
+    "project_id": "week-6-task-d2672",
+    "storage_bucket": "week-6-task-d2672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479648512488:android:e64ebe0d32209421138c5d",
+        "android_client_info": {
+          "package_name": "com.kings.contactapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479648512488-c9kpvdml1kv9dfr4e2t228o6v4erf1c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh4AO3XZ2m3s_7H6kEB2jvJ_SDe7XoIwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479648512488-c9kpvdml1kv9dfr4e2t228o6v4erf1c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479648512488:android:29b719fbb924d732138c5d",
+        "android_client_info": {
+          "package_name": "dev.decagon.godday.contacts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479648512488-c9kpvdml1kv9dfr4e2t228o6v4erf1c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh4AO3XZ2m3s_7H6kEB2jvJ_SDe7XoIwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479648512488-c9kpvdml1kv9dfr4e2t228o6v4erf1c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

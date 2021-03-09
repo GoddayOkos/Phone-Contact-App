@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="add_word">Add contacts</string>
+    <string name="item_profile_picture">profile image</string>
+    <string name="create_contact">Create new contact</string>
+    <string name="contact_details">Contact details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_contact">Edit contact</string>
+    <string name="error_message">ERROR: PERMISSION DENIED!</string>
+    <string name="phone_contact_label">Phone contact list</string>
+</resources>

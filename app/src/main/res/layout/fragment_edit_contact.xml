@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_edit_contact_scene"
+    tools:context=".ui.EditContactFragment">
+
+    <FrameLayout
+        android:id="@+id/createImage"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:foreground="#6F03DAC5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/contactImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar_2" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/nameIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_baseline_person_outline_24"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@id/nameIcon"
+        app:layout_constraintTop_toBottomOf="@id/createImage"
+        app:textInputLayoutFocusedRectEnabled="true" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_outline_phone_24"
+        app:layout_constraintBottom_toBottomOf="@id/phoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/phoneNumber" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <ImageView
+        android:id="@+id/emilIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_outline_email_24"
+        app:layout_constraintBottom_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/email" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
